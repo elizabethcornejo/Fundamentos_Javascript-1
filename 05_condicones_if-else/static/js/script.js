@@ -155,7 +155,6 @@ function precioDescuento() {
         alert(`El valor ingresado fue: ${precio}\n
             IVa : ${precio * iva}\n 
             precio total: ${precio * 1.19}`);
-        );
     } else {
         alert("precio normal");
     }
@@ -167,7 +166,7 @@ function precioDescuento() {
  licencia, muestra “Puede conducir”. 
  Si no, muestra “No puede conducir”.*/
 
-function ingresarUsuario(){
+function ingresarUsuario() {
     let = edad = parseInt(prompt("¿Cual estu edad?"));
     let = tienenLicencia = prompt("¿Tienes licencia de conducir?");
     if (edad >= 18 && tieneLicencia == "si") {
