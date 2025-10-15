@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #c0c0c0;
+    padding: 20px;
+    margin: 80px;
+    height: 700px;
+    width: 1000px;
+}
+
+.card-verde {
+    background-color: #008000;
+    padding-bottom: 100px;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+.card-azul {
+    background-color: #0000ff;
+    padding: 20px;
+    height: 350px;
+    width: 200px;
+}
+
+.card-bottom {
+    display: flex;
+}
+
+.card-roja {
+    background-color: #ff0000;
+    margin-left: 20px;
+    padding-right: 20px;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-amarilla {
+    background-color: #ffff00;
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+    height: 200px;
+    margin: 8px;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-morada {
+    background-color: #800080;
+    margin-bottom: 30px;
+    margin: 8px;
+    height: 160px;
+    width: 635px;
+}
+
+.direction {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 8px;
+}
