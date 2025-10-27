@@ -91,3 +91,49 @@ function imprimirMultiplos() {
     }
     alert(` ${result}`)
 }
+
+
+/*5️⃣ Bucle for: Tabla de multiplicar
+Pide un número al usuario e imprime su tabla de multiplicar del 1 al 10 en un solo alert.
+
+Ejemplo de resultado:
+Tabla del 5
+5 x 1 = 5
+5 x 2 = 10
+...
+5 x 10 = 50 */
+
+function tablaMultiplicar() {
+    let num = parseInt(prompt("Ingresar número: "));
+    let tablas = `Tabla de ${num}: `;
+    /*inicio de bucle for */
+    for (let i = 1; i <= 10; i++) {
+        tablas += ` \n ${num} x ${i} = ${num * i}`
+    }
+    alert(tablas)
+}
+/*6️⃣ Bucle for: Números pares hasta n
+Solicita un número n e imprime todos los números pares desde 1 hasta n usando un bucle for.
+
+Ejemplo de resultado:
+2, 4, 6, 8, 10
+ */
+
+/*7️⃣ Bucle for: Contar letras de una palabra
+Pide una palabra al usuario y muestra cuántas letras tiene usando un bucle for para recorrerla.
+
+Ejemplo de resultado:
+La palabra "Programación" tiene 12 letras. */
+
+/*8️⃣ Bucle for: Calcular factorial
+Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.
+
+Ejemplo de resultado:
+El factorial de 5 es 120. */
+
+/*9️⃣ Bucle for: Suma de números impares hasta n
+Pide un número n y suma todos los números impares desde 1 hasta n.
+Muestra el resultado con alert.
+
+Ejemplo de resultado:
+La suma de impares hasta 9 es 25. */
