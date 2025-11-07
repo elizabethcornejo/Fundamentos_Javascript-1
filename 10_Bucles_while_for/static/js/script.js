@@ -118,12 +118,29 @@ Solicita un número n e imprime todos los números pares desde 1 hasta n usando 
 Ejemplo de resultado:
 2, 4, 6, 8, 10
  */
-
+function numerosPares() {
+    let num = parseInt(prompt("Ingresar número: "));
+    let resultado = `los números pares de ${num} son: `
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            resultado += ` ${i}`
+        }
+    }
+    alert(resultado);
+}
 /*7️⃣ Bucle for: Contar letras de una palabra
 Pide una palabra al usuario y muestra cuántas letras tiene usando un bucle for para recorrerla.
 
 Ejemplo de resultado:
 La palabra "Programación" tiene 12 letras. */
+function contarLetras() {
+    let word = prompt("Ingresar palabra: ");
+    let cont = 0
+    for (let i = 0; i < word.length; i++) {
+        cont++
+    }
+    alert(`La palabra " ${word} tiene ${cont} letras."`)
+}
 
 /*8️⃣ Bucle for: Calcular factorial
 Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × … × 1) usando un bucle for.
@@ -131,9 +148,34 @@ Solicita un número n e imprime el factorial de ese número (n × n-1 × n-2 × 
 Ejemplo de resultado:
 El factorial de 5 es 120. */
 
+function calcularFactorial() {
+    let numero = parseInt(prompt("Ingrese un numero para calcular su factorial: "));
+    let factorial = 1;
+    let largo = "";
+    for (let i = 2; i <= numero; i++) {
+        largo += `${i} *`
+        factorial *= i;
+    }
+    alert(`El factorial de ${numero} es : ${largo} = ${factorial}`)
+}
+
 /*9️⃣ Bucle for: Suma de números impares hasta n
 Pide un número n y suma todos los números impares desde 1 hasta n.
 Muestra el resultado con alert.
 
 Ejemplo de resultado:
 La suma de impares hasta 9 es 25. */
+
+function sumaNumeros(){
+ let numero = parseInt(prompt("Ingresar número: "));
+ let respuesta = 0;
+ let largoImpar = "1";
+ for (let i = 2; i <= numero; i++){
+    if (i % 2 != 0) {
+        respuesta += i;
+        largoImpar += ` + ${i}`
+    }
+ }
+ respuesta += 1;
+ alert(`las sumas de  ${largoImpar} = ${respuesta}`)
+}
